@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">TO DO LIST APP</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="title_activity_registration">RegistrationActivity</string>
+    <string name="title_activity_forget_password">ForgetPasswordActivity</string>
+    <string name="title_activity_dashboard">DashboardActivity</string>
+    <string name="title_activity_splash">SplashActivity</string>
+    <string name="title_activity_nav_graph">NavGraph</string>
+    <string name="title_activity_task_dialog">TaskDialog</string>
+    <string name="title_activity_draggable_task_list">DraggableTaskList</string>
+    <string name="title_activity_pomodoro_card">PomodoroCard</string>
+    <string name="title_activity_bulk_action_bar">BulkActionBar</string>
+    <string name="title_activity_profile_screen">ProfileScreen</string>
+</resources>
