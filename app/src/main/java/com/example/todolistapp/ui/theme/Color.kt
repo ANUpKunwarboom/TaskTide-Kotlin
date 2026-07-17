@@ -2,6 +2,10 @@ package com.example.todolistapp.ui.theme
 
 import androidx.compose.ui.graphics.Color
 
+/**
+ * Color definitions for the TaskTide theme.
+ * This file contains the color palette used for consistent UI styling.
+ */
 val Purple = Color(0xFF7C5CFC)
 val PurpleLight = Color(0xFFA78BFA)
 val Green = Color(0xFF34D399)
