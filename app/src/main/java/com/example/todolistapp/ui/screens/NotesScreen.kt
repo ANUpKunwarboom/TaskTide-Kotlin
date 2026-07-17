@@ -27,6 +27,10 @@ import com.example.todolistapp.model.NoteModel
 import com.example.todolistapp.ui.theme.*
 import com.example.todolistapp.viewmodel.NoteViewModel
 
+/**
+ * NotesScreen provides the interface for managing personal notes.
+ * It supports creating, editing, and deleting notes with customizable colors.
+ */
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun NotesScreen(
