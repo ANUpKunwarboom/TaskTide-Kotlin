@@ -9,6 +9,10 @@ import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.launch
 
+/**
+ * NoteViewModel handles the business logic for managing personal notes.
+ * It provides state flows for notes and loading status.
+ */
 class NoteViewModel(
     private val repo: NoteRepo = NoteRepo(),
     private val auth: FirebaseAuth = FirebaseAuth.getInstance()
