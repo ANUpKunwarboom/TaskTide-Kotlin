@@ -22,6 +22,10 @@ private val DarkColors = darkColorScheme(
     error = Red
 )
 
+/**
+ * TodoListAppTheme sets up the custom Material3 theme for the application.
+ * It configures the dark color scheme, typography, and status bar appearance.
+ */
 @Composable
 fun TodoListAppTheme(content: @Composable () -> Unit) {
     val colorScheme = DarkColors
