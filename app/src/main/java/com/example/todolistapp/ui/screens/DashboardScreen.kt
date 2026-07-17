@@ -42,6 +42,10 @@ import java.text.SimpleDateFormat
 import java.util.*
 
 @OptIn(ExperimentalMaterial3Api::class, ExperimentalLayoutApi::class)
+/**
+ * DashboardScreen serves as the main hub of the application.
+ * It displays a summary of tasks, statistics, and quick actions.
+ */
 @Composable
 fun DashboardScreen(
     authViewModel: AuthViewModel,
