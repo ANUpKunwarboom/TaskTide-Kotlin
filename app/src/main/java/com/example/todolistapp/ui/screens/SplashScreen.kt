@@ -19,6 +19,10 @@ import androidx.compose.ui.unit.sp
 import com.example.todolistapp.ui.theme.*
 import kotlinx.coroutines.delay
 
+/**
+ * SplashScreen provides the entry animation for the application.
+ * It displays the app logo and tagline before navigating to the main content.
+ */
 @Composable
 fun SplashScreen(onTimeout: () -> Unit) {
     var visible by remember { mutableStateOf(false) }
