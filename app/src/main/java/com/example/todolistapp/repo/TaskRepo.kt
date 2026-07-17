@@ -4,6 +4,10 @@ import com.example.todolistapp.model.TaskModel
 import com.google.firebase.firestore.FirebaseFirestore
 import kotlinx.coroutines.tasks.await
 
+/**
+ * TaskRepo provides an abstraction layer over Firestore for task operations.
+ * It handles fetching, creating, updating, and deleting tasks for a specific user.
+ */
 class TaskRepo {
     private val db = FirebaseFirestore.getInstance()
     private val tasksRef = db.collection("tasks")
