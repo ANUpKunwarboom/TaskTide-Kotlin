@@ -18,6 +18,10 @@ import com.example.todolistapp.ui.theme.*
 import com.example.todolistapp.viewmodel.AuthViewModel
 
 @OptIn(ExperimentalMaterial3Api::class)
+/**
+ * ForgotPasswordScreen allows users to request a password reset email.
+ * It provides a simple interface to enter an email address.
+ */
 @Composable
 fun ForgotPasswordScreen(viewModel: AuthViewModel, onBack: () -> Unit) {
     var email by remember { mutableStateOf("") }
