@@ -28,7 +28,7 @@ sealed class ProfileState {
  * AuthViewModel coordinates authentication state between the UI and AuthRepo.
  * It exposes state flows for loading, errors, and user data.
  */
-class AuthViewModel(private val repo: AuthRepo = AuthRepo()) : ViewModel() {
+open class AuthViewModel(private val repo: AuthRepo = AuthRepo()) : ViewModel() {
 
     private val _authState    = MutableStateFlow<AuthState>(AuthState.Idle)
     val authState: StateFlow<AuthState> = _authState

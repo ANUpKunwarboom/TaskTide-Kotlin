@@ -17,7 +17,7 @@ import java.io.ByteArrayOutputStream
  * AuthRepo handles all authentication-related data operations.
  * It interacts with Firebase Auth and Firestore for user management.
  */
-class AuthRepo {
+open class AuthRepo {
     private val auth = FirebaseAuth.getInstance()
     private val db   = FirebaseFirestore.getInstance()
 

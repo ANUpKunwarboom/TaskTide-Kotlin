@@ -6,11 +6,7 @@ plugins {
 
 android {
     namespace = "com.example.todolistapp"
-    compileSdk {
-        version = release(36) {
-            minorApiLevel = 1
-        }
-    }
+    compileSdk = 36
 
     defaultConfig {
         applicationId = "com.example.todolistapp"
@@ -43,6 +39,8 @@ android {
             excludes += "/META-INF/{AL2.0,LGPL2.1}"
             excludes += "/META-INF/LICENSE.md"
             excludes += "/META-INF/LICENSE-notice.md"
+            // Ensure Mockito settings are not stripped
+            pickFirsts += "mockito-extensions/**"
         }
     }
 }
@@ -77,12 +75,12 @@ dependencies {
     testImplementation("org.mockito.kotlin:mockito-kotlin:5.2.1")
 
     androidTestImplementation(libs.androidx.junit)
-    androidTestImplementation("androidx.test:runner:1.2.0")
-    androidTestImplementation("androidx.test:rules:1.2.0")
-    androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
-    androidTestImplementation("androidx.test.espresso:espresso-intents:3.5.1")
-    androidTestImplementation(libs.mockk)
-    androidTestImplementation("io.mockk:mockk-android:1.13.12")
+    androidTestImplementation(libs.androidx.test.runner)
+    androidTestImplementation(libs.androidx.test.rules)
+    androidTestImplementation(libs.androidx.espresso.core)
+    androidTestImplementation(libs.androidx.espresso.intents)
+    androidTestImplementation("org.mockito:mockito-android:5.11.0")
+    androidTestImplementation("org.mockito.kotlin:mockito-kotlin:5.2.1")
     androidTestImplementation(platform(libs.androidx.compose.bom))
     androidTestImplementation(libs.androidx.compose.ui.test.junit4)
     debugImplementation(libs.androidx.compose.ui.tooling)

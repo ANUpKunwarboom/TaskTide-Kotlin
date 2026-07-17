@@ -5,7 +5,8 @@ import androidx.compose.ui.test.onNodeWithText
 import androidx.compose.ui.test.performClick
 import androidx.compose.ui.test.performTextInput
 import com.example.todolistapp.viewmodel.AuthViewModel
-import io.mockk.mockk
+import com.example.todolistapp.repo.AuthRepo
+import org.mockito.Mockito.mock
 import org.junit.Rule
 import org.junit.Test
 
@@ -14,7 +15,8 @@ class LoginInstrumentedTest {
     @get:Rule
     val composeTestRule = createComposeRule()
 
-    private val viewModel: AuthViewModel = mockk(relaxed = true)
+    private val repo: AuthRepo = mock(AuthRepo::class.java)
+    private val viewModel: AuthViewModel = AuthViewModel(repo)
 
     @Test
     fun loginScreen_initialState() {
