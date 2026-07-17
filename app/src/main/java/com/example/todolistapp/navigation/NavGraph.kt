@@ -21,6 +21,10 @@ object Routes {
     const val NOTES           = "notes"
 }
 
+/**
+ * NavGraph defines the navigation structure of the application.
+ * It manages the transitions between different screens using Compose Navigation.
+ */
 @Composable
 fun NavGraph() {
     val navController  = rememberNavController()
