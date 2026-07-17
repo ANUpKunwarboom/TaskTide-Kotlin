@@ -13,6 +13,10 @@ import com.google.firebase.firestore.FirebaseFirestore
 import kotlinx.coroutines.tasks.await
 import java.io.ByteArrayOutputStream
 
+/**
+ * AuthRepo handles all authentication-related data operations.
+ * It interacts with Firebase Auth and Firestore for user management.
+ */
 class AuthRepo {
     private val auth = FirebaseAuth.getInstance()
     private val db   = FirebaseFirestore.getInstance()
