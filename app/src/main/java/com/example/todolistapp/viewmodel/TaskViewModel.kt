@@ -18,6 +18,10 @@ data class TaskStats(
     val pending: Int = 0
 )
 
+/**
+ * TaskViewModel manages the state and logic for task-related operations.
+ * It provides methods for adding, updating, deleting, and fetching tasks.
+ */
 class TaskViewModel(
     private val repo: TaskRepo = TaskRepo(),
     private val auth: FirebaseAuth = FirebaseAuth.getInstance()
