@@ -5,6 +5,10 @@ import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.sp
 
+/**
+ * Typography settings for the TaskTide theme.
+ * Defines the font styles and sizes used for different text elements.
+ */
 val Typography = Typography(
     headlineLarge = TextStyle(fontWeight = FontWeight.ExtraBold, fontSize = 32.sp, letterSpacing = (-0.5).sp),
     headlineMedium = TextStyle(fontWeight = FontWeight.Bold, fontSize = 24.sp),
