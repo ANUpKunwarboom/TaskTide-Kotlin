@@ -4,6 +4,10 @@ import com.example.todolistapp.model.NoteModel
 import com.google.firebase.firestore.FirebaseFirestore
 import kotlinx.coroutines.tasks.await
 
+/**
+ * NoteRepo handles the data persistence for personal notes in Firestore.
+ * It provides methods for CRUD operations on the "notes" collection.
+ */
 class NoteRepo {
     private val db = FirebaseFirestore.getInstance()
     private val notesRef = db.collection("notes")
