@@ -26,6 +26,10 @@ import com.example.todolistapp.viewmodel.AuthState
 import com.example.todolistapp.viewmodel.AuthViewModel
 
 @OptIn(ExperimentalMaterial3Api::class)
+/**
+ * LoginScreen provides the user interface for existing users to sign in.
+ * It handles email/password input and navigates to registration or password reset.
+ */
 @Composable
 fun LoginScreen(
     viewModel: AuthViewModel,
