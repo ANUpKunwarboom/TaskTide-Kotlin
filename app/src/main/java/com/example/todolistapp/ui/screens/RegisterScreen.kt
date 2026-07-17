@@ -26,6 +26,10 @@ import com.example.todolistapp.viewmodel.AuthState
 import com.example.todolistapp.viewmodel.AuthViewModel
 
 @OptIn(ExperimentalMaterial3Api::class)
+/**
+ * RegisterScreen allows new users to create an account.
+ * It collects user details like name, email, and password.
+ */
 @Composable
 fun RegisterScreen(
     viewModel: AuthViewModel,
