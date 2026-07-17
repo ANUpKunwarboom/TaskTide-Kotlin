@@ -38,6 +38,10 @@ import com.example.todolistapp.viewmodel.AuthViewModel
 import com.example.todolistapp.viewmodel.ProfileState
 
 @OptIn(ExperimentalMaterial3Api::class)
+/**
+ * ProfileScreen allows users to view and update their profile information.
+ * It includes options for updating display name, email, and logging out.
+ */
 @Composable
 fun ProfileScreen(
     authViewModel: AuthViewModel,
