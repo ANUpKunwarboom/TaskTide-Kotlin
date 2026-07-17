@@ -1,5 +1,9 @@
 package com.example.todolistapp.model
 
+/**
+ * TaskModel represents a single to-do item in the application.
+ * It contains details like title, description, priority, and completion status.
+ */
 data class TaskModel(
     val id: String = "",
     val userId: String = "",
